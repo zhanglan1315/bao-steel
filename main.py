@@ -6,6 +6,6 @@ def main():
   kinds = BilletResolver.getBilletsKinds(data)
   for kind in kinds:
     if (len(kind.billets) > 50):
-      print(len(kind.billets))
+      print(kind.ranges)
 
 main()
