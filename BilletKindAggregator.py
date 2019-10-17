@@ -65,7 +65,7 @@ class BilletKindAggregator:
       y = scipy.stats.norm.pdf(h.bins, h.mu, h.sigma)
       yAxis.append(y)
       axis.plot(h.bins, y, label='拟合的正态分布曲线')
-      axis.hist(h.values, h.bins, color='g', label='频率分布直方图')
+      axis.hist(h.values, h.bins, color='g', density=True, label='频率分布直方图')
       axis.set_xlabel(h.text + '(t)/s')
       axis.set_title(h.text + '频率分布直方图及拟合正态分布曲线')
       axis.legend()
